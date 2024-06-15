@@ -1,6 +1,6 @@
-import { users } from "../database/db.js";
+import { getUsers } from "../utils.js";
 export const resolvers = {
   Query: {
-    users: () => users,
+    users: () => getUsers(),
   },
 };

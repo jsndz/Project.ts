@@ -1,14 +1,16 @@
 export const typeDefs = `
 
     type  User {
-
-        name: String,
+        id:String
+        password:String
+        name: String
         email:String
         projects: [project]
     }
     type project {
+        id:Int
         title :String
-        active : Boolean
+        status : String
         members:[User]
     }
     type Query {
